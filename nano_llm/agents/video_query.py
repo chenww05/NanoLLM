@@ -193,6 +193,9 @@ class VideoQuery(Agent):
 
         if text:
             y = wrap_text(self.font, image, text=text, x=5, y=y, color=self.font.White, background=self.font.Gray40)
+
+        if text: 
+            cprint(f"chenww05 we have received a description of the scene\n{pprint.pformat(text, indent=2)}", color='blue')
         
         self.video_output(image)
    
