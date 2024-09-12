@@ -137,7 +137,7 @@ class VideoQuery(Agent):
                                     webrtc_output_port=8554))
 
         web_title = kwargs.get('web_title')
-        web_title = web_title if web_title else 'LIVE LLAVA'
+        web_title = web_title if web_title else 'EMBODYX LIVE DEMO'
         
         #: the webserver (by default on ``https://localhost:8050``)
         self.server = WebServer(
